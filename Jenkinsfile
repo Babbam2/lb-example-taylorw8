@@ -3,12 +3,12 @@ pipeline {
 
     environment {
         DOCKER_CREDENTIALS_ID = 'roseaw-dockerhub'   //don't change this
-        DOCKER_IMAGE = 'cithit/taylorw8-metal'         //do change this
+        DOCKER_IMAGE = 'cithit/babbam2-metal'         //do change this
         // Use Jenkins build number as part of the image tag
         IMAGE_TAG = "build-${BUILD_NUMBER}"
-        GITHUB_URL = 'https://github.com/WTaylor8miami/lb-example-taylorw8.git'  //do change this
+        GITHUB_URL = 'https://github.com/Babbam2/lb-example-taylorw8.git'  //do change this
         
-        KUBECONFIG = credentials('taylorw8-225')  //do change this
+        KUBECONFIG = credentials('babbam2-225')  //do change this
     }
 
     stages {
